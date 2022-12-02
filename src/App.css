@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Poppins:wght@400;600;800&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 100%;
+  
+}
+.display_none {
+  display: none;
+ 
+}
+@media only screen and (max-width: 930px) {
+  html{
+   
+    font-size: 100%;
+    
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  html{
+    
+    font-size: 80%;
+    
+  }
+}
+
+
+@media only screen and (max-width: 300px) {
+  html{
+    
+    font-size: 50%;
+    
+  }
+}
+.atc_animation{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  position:fixed;
+  z-index: 30;
+  top: 50%;
+  left: 50%;
+  margin:-50px 0 0 -50px;
+  background-color: rgb(180, 58, 119);
+  transform: scale(0);
+  align-items: center;
+  justify-content: center;
+}
+.tick{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+
+
+ 
+}
+.start_atc_animation{
+  animation: animate_atc 1s  linear 0s alternate forwards ;
+ 
+}
+@keyframes animate_atc{
+
+  0%{
+    transform: scale(0) rotate(0deg);
+    border-radius: 0;
+    opacity: 0;
+  }
+  25% ,70%{
+    transform:scale(1) rotate(360deg);
+    border-radius: 50%;
+    opacity: 1;
+  }
+  
+  100%{
+    transform: scale(0) rotate(0deg);
+    border-radius: 0;
+    opacity: 0;
+    
+  }
+}

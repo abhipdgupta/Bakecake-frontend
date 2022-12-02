@@ -1,0 +1,139 @@
+.csp{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}
+.cart{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+.cart-item{
+
+   display: flex;
+   font-weight: bold;
+    align-items: center;
+   width: 100% ;
+   max-width: 830px;
+   height: 100px;
+   justify-content:space-between;
+   border-bottom: 2px solid gray;
+   gap: 10px;
+   padding: 5px 10px 5px 10px ;
+   
+
+}
+.cart-img-top{
+    height: 100%;
+    width: 100px;
+    object-fit:scale-down
+    
+}
+
+.cart-title{
+    width: 100px;
+    text-align: start;
+}
+.cart-price{
+    width: 100px;
+    text-align: start;
+}
+.cart-delete{
+    height: 40px;
+    
+}
+.cart-delete img{
+    height: 100%;
+}
+.sub-total{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart > h1{
+    
+    display: flex;
+   align-items:center;
+   
+   width: 100% ;
+   max-width: 830px;
+   height: 100px;
+   justify-content:center;
+   /* border-bottom: 2px solid rgb(216, 10, 10); */
+   padding: 10px;
+   
+    
+}
+.counter{
+    display: flex;
+    gap: 10px;
+}
+.counter:hover{
+    cursor: pointer;
+}
+.item_quantity{
+    font-weight: bold;
+}
+#order_form{
+    
+    display: flex;
+    width: 95%;
+    height: 0;
+    max-width: 480px;
+    margin: 50px;
+    overflow: hidden;
+    transition: height .5s ease-in;
+    background-color: rgb(245, 179, 245);
+    border-radius: 40px;
+    margin: 10px;
+}
+
+.sub-total{
+    background-color: rgb(245, 179, 245);
+    width: 95%;
+    max-width: 480px;
+    border-radius: 40px;
+}
+.cart >h1{
+    background-color: rgb(245, 179, 245);
+    width: 95%;
+    max-width: 480px;
+    border-radius: 40px;
+}
+.cart-item{
+    
+    border-radius: 20px;
+    width: 95%;
+    max-width: 480px;
+    border-radius: 30px;
+}
+#place_order_btn{
+    background-color: rgb(180, 58, 119);
+    border-radius: 2rem;
+    border: none;
+    transition: background-color 1s ease;
+    width: 8rem;
+    height: 4rem;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    position: relative;
+    top: 1.5rem;
+    font-size: 1.4rem;
+}
+#place_order_btn:hover {
+    background-color: hotpink;
+    transform: scale(1.01);
+  }
