@@ -26,7 +26,7 @@ export const OrderForm = ({ cart, setcart }) => {
     if (cart.length === 0) alert("CART IS EMPTY");
     else {
       console.log("place order clicked");
-      Axios.post("http://localhost:3001/orders", data)
+      Axios.post(`${process.env.REACT_APP_BACKEND_URL}/orders`, data)
         .then((response) => {
           if (cart.length === 0){ alert("CART IS EMPTY");
           

@@ -10,7 +10,7 @@ export const Dashboard = ({ shownav, setshownav, banner, category}) => {
   const [customers, setcustomers] = useState([]);
   const [orders, setorders] = useState([]);
   const getcustomers = () => {
-    Axios.get("http://localhost:3001/customers")
+    Axios.get(`${process.env.REACT_APP_BACKEND_URL}/customers`)
       .then((response) => {
         console.log(response.data);
 
@@ -22,7 +22,7 @@ export const Dashboard = ({ shownav, setshownav, banner, category}) => {
   };
 
   const getorders = ({ order_id }) => {
-    Axios.get(`http://localhost:3001/orders/${order_id}`)
+    Axios.get(`${process.env.REACT_APP_BACKEND_URL}/orders/${order_id}`)
       .then((response) => {
         console.log(response.data);
 

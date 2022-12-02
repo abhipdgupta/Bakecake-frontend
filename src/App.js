@@ -39,7 +39,7 @@ const App = () => {
   const [admin, setadmin] = useState(adminStatusLOCAL);
 
   const getbanner = () => {
-    Axios.get("http://localhost:3001/banner")
+    Axios.get(`${process.env.REACT_APP_BACKEND_URL}/banner`)
       .then((response) => {
         console.log(response);
 
@@ -51,7 +51,7 @@ const App = () => {
   };
 
   const getcategory = () => {
-    Axios.get("http://localhost:3001/category")
+    Axios.get(`${process.env.REACT_APP_BACKEND_URL}/category`)
       .then((response) => {
         console.log(response.data);
 
@@ -63,7 +63,7 @@ const App = () => {
   };
 
   const getproduct = () => {
-    Axios.get("http://localhost:3001/products")
+    Axios.get(`${process.env.REACT_APP_BACKEND_URL}/products`)
       .then((response) => {
         console.log(response.data);
         let arr = response.data.products;

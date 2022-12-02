@@ -21,7 +21,7 @@ export const Login = ({ admin, setadmin, shownav, setshownav }) => {
   const handleAdmin = (e) => {
     e.preventDefault();
 
-    Axios.post("http://localhost:3001/login/admin", admin_info)
+    Axios.post(`${process.env.REACT_APP_BACKEND_URL}/login/admin`, admin_info)
       .then((response) => {
         setadmin(response.data.validation);
       })
