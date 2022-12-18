@@ -7,12 +7,16 @@ export const Login = ({ admin, setadmin, shownav, setshownav }) => {
     setshownav(false);
   });
   const login_page_animation = () => {
-    const inputs = document.getElementsByClassName("admin-form-input");
-    const labels = document.getElementsByClassName("admin-form-label");
-    for (let i = 0; i < inputs.length; i++) {
-      inputs[i].onfocus = () => {
-        labels[i].style.transform = "translateY(10px)";
-      };
+    const mediaQuery = window.matchMedia("(min-width: 931px)");
+    // Check if the media query is true
+    if (mediaQuery.matches) {
+      const inputs = document.getElementsByClassName("admin-form-input");
+      const labels = document.getElementsByClassName("admin-form-label");
+      for (let i = 0; i < inputs.length; i++) {
+        inputs[i].onfocus = () => {
+          labels[i].style.transform = "translateY(10px)";
+        };
+      }
     }
   };
   const [admin_info, setadmin_info] = useState({
