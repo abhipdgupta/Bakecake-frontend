@@ -110,3 +110,21 @@
   margin-left: -25%;
   scale: 1.3;
 }
+
+@media only screen and (max-width: 930px) {
+  .admin-form-label {
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .admin-form-label {
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .admin-form-label {
+    transform: translateY(0px);
+  }
+}
